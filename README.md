@@ -2,7 +2,7 @@
 
 For years I've been using different coding conventions for JavaScript development.
 
-But after reading [Nicholas Zakas's book](http://shop.oreilly.com/product/0636920025245.do) and inspired by [@zeh](https://github.com/zeh/), I've decided to formalize my reasons behind some of the conventions I adopted.
+But after reading [Nicholas Zakas's book](http://shop.oreilly.com/product/0636920025245.do) and inspired by [@zeh](https://github.com/zeh/), I've decided to formalize my reasons behind some of the conventions I adopted. Feel free to suggest anything you want :)
 
 > "All code in any code-base should look like a single person typed it, no matter how many people contributed."
 
@@ -19,7 +19,7 @@ Added feature X
 Adding feature X
 ```
 
-It needs to be in English, doesn't matter what's your native language.
+Every commit message needs to be in English, doesn't matter what's your native language.
 
 ## Indentation
 
@@ -37,13 +37,13 @@ while (condition) {
 }
 ```
 
-Every project should contain a `.editorconfig` file that automatically set some indentation definitions. Make sure to install [Editor Config's](http://editorconfig.org/) plugin on your code editor and you'll be all set.
+Every project should contain a [.editorconfig](https://github.com/zenorocha/my-coding-style/blob/master/.editorconfig) file that automatically set some indentation definitions. Make sure to install [Editor Config's](http://editorconfig.org/) plugin on your code editor and you'll be all set.
 
 ## Linting
 
 Use [JSHint](http://www.jshint.com/) to detect errors and potential problems.
 
-The options for JSHint are stored in a [.jshintrc](#) file.
+The options for JSHint are stored in a [.jshintrc](https://github.com/zenorocha/my-coding-style/blob/master/.jshintrc) file.
 
 ## Variables
 
