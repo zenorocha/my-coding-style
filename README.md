@@ -91,14 +91,6 @@ var color = '#D96AB6';
 var color = '#d96ab6';
 ```
 
-```javascript
-// Good
-var color = 0xD96AB6;
-
-// Bad
-var color = 0xd96ab6;
-```
-
 ## New lines
 
 Parentheses `()` and commas `,` are **not** followed by indented children on new lines.
@@ -183,7 +175,7 @@ Empty lines have no trailing spaces.
 
 ## Conditionals
 
-Avoid inline conditionals. Every conditional (with single or multiple statements) should use **curly brackets**  `{}`. The only exception to this rule is `else if`.
+Avoid inline conditionals. Every conditional (with single or multiple statements) should use **curly brackets** `{}`. The only exception to this rule is `else if`.
 
 ```javascript
 // Good
@@ -231,7 +223,7 @@ if (bar != 'bar') {
 
 ## Loops
 
-Avoid inline loops. Every loop (with single or multiple statements) should use **curly brackets**  `{}`.
+Avoid inline loops. Every loop (with single or multiple statements) should use **curly brackets** `{}`.
 
 ```javascript
 // Good
