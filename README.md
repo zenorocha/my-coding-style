@@ -1,16 +1,25 @@
 # My Coding Style
 
-For years I've been using different coding conventions.
+For years I've been using different coding conventions for JavaScript development.
 
 But after reading [Nicholas Zakas's book](http://shop.oreilly.com/product/0636920025245.do) and inspired by [@zeh](https://github.com/zeh/), I've decided to formalize my reasons behind some of the conventions I adopted.
 
 > "All code in any code-base should look like a single person typed it, no matter how many people contributed."
 
-## Linting
+## Commits
 
-Use [JSHint](http://www.jshint.com/) to detect errors and potential problems.
+Don't use Past or Present Continuous tenses for commit messages, those should be in Imperative Present tense.
 
-The options for JSHint are stored in a [.jshintrc](#) file.
+```javascript
+// Good
+Add feature X
+
+// Bad
+Added feature X
+Adding feature X
+```
+
+It needs to be in English, doesn't matter what's your native language.
 
 ## Indentation
 
@@ -29,6 +38,12 @@ while (condition) {
 ```
 
 Every project should contain a `.editorconfig` file that automatically set some indentation definitions. Make sure to install [Editor Config's](http://editorconfig.org/) plugin on your code editor and you'll be all set.
+
+## Linting
+
+Use [JSHint](http://www.jshint.com/) to detect errors and potential problems.
+
+The options for JSHint are stored in a [.jshintrc](#) file.
 
 ## Variables
 
