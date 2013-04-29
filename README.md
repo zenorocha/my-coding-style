@@ -1,0 +1,236 @@
+# My Coding Style
+
+For years I've been using different coding conventions.
+
+But after reading [Nicholas Zakas's book](http://shop.oreilly.com/product/0636920025245.do) and inspired by [@zeh](https://github.com/zeh/), I've decided to formalize my reasons behind some of the conventions I adopted.
+
+> "All code in any code-base should look like a single person typed it, no matter how many people contributed."
+
+## Linting
+
+Use [JSHint](http://www.jshint.com/) to detect errors and potential problems.
+
+The options for JSHint are stored in a [.jshintrc](#) file.
+
+## Indentation
+
+The unit of indentation is **four spaces**. Never mix spaces and tabs.
+
+```javascript
+// Good
+while (condition) {
+    statements
+}
+
+// Bad
+while (condition) {
+  statements
+}
+```
+
+Every project should contain a `.editorconfig` file that automatically set some indentation definitions. Make sure to install [Editor Config's](http://editorconfig.org/) plugin on your code editor and you'll be all set.
+
+## Variables
+
+All variables should be declared **before** used. Avoid multiple var statements.
+
+```javascript
+// Good
+var foo = '',
+    bar = '';
+
+// Bad
+var foo = '';
+var bar = '';
+```
+
+Constants (variables with permanent values) are written **uppercase**.
+
+```javascript
+// Good
+var FOO = 'foo';
+
+// Bad
+var foo = 'foo';
+```
+
+## Strings
+
+Prefer single quotes over double quotes.
+
+```javascript
+// Good
+var string = '<p class="foo">Lorem Ipsum</p>';
+
+// Bad
+var string = "<p class='foo'>Lorem Ipsum</p>";
+```
+
+Hexidecimal colors are written **uppercase**.
+
+```javascript
+// Good
+var color = '#D96AB6';
+
+// Bad
+var color = '#d96ab6';
+```
+
+```javascript
+// Good
+var color = 0xD96AB6;
+
+// Bad
+var color = 0xd96ab6;
+```
+
+## New lines
+
+Parentheses `()` and commas `,` are **not** followed by indented children on new lines.
+
+```javascript
+// Good
+YUI().use('aui-module', function (Y) {
+    statements
+});
+
+// Bad
+YUI().use(
+    'aui-module',
+    function (Y) {
+        statements
+    }
+);
+```
+
+Curly brackets `{}` are followed by **new lines** and indented children.
+
+```javascript
+// Good
+if (condition) {
+    statements
+}
+else {
+    statements
+}
+
+// Bad
+if (condition) {
+    statements
+} else {
+    statements
+}
+```
+
+## Whitespace
+
+Add spaces between **operators** (`=`, `>`, `*`, etc).
+
+```javascript
+// Good
+for (i = 0; i < 10; i++) {
+    statements
+}
+
+// Bad
+for (i=0;i<10;i++) {
+    statements
+}
+```
+
+Both function expressions and function declarations have a space after the function keyword and the function name.
+
+```javascript
+var foo = function () {
+    statements
+};
+
+function bar () {
+    statements
+}
+```
+
+Add spaces **outside** parentheses `()` but avoid it inside.
+
+```javascript
+// Good
+if (x > 10) {
+    statements
+}
+
+// Bad
+if( x > 10 ){
+    statements
+}
+```
+
+Empty lines have no trailing spaces.
+
+## Conditionals
+
+Avoid inline conditionals. Every conditional (with single or multiple statements) should use **curly brackets**  `{}`. The only exception to this rule is `else if`.
+
+```javascript
+// Good
+if (condition) {
+    statements
+}
+else if (condition) {
+    statements
+}
+else {
+    statements
+}
+
+// Bad
+if (condition) statement;
+else if (condition) statement;
+else statement;
+```
+
+## Equality
+
+Strict equality checks `===` should be used in favor of `==`.
+
+```javascript
+// Good
+if (foo === 'foo') {
+    statement
+}
+
+// Bad
+if (foo == 'foo') {
+    statement
+}
+
+// Good
+if (bar !== 'bar') {
+    statement
+}
+
+// Bad
+if (bar != 'bar') {
+    statement
+}
+```
+
+## Loops
+
+Avoid inline loops. Every loop (with single or multiple statements) should use **curly brackets**  `{}`.
+
+```javascript
+// Good
+for (initialization; condition; expression) {
+    statements
+}
+
+// Bad
+for (initialization; condition; expression) statement;
+```
+
+## References
+
+* [Google JavaScript Style Guide](http://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml)
+* [Douglas Crockford's Code Conventions for JavaScript](http://javascript.crockford.com/code.html)
+* [idiomatic.js](https://github.com/rwldrn/idiomatic.js/)
+* [jQuery JavaScript Style Guide](http://contribute.jquery.org/style-guide/js/)
