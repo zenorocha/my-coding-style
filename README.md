@@ -37,6 +37,19 @@ while (condition) {
 }
 ```
 
+## Line length
+
+Avoid lines longer than **80 characters**. When a statement will not fit on a single line, it may be necessary to break it. Place the break after an operator, ideally after a comma. The next line should be indented **4 spaces**.
+
+```javascript
+// Good
+YUI().use('aui-module-a', 'aui-module-b', 'aui-module-c', 'aui-module-d',
+    'aui-module-e', 'aui-module-f');
+
+// Bad
+YUI().use('aui-module-a', 'aui-module-b', 'aui-module-c', 'aui-module-d', 'aui-module-e', 'aui-module-f');
+```
+
 Every project should contain a [.editorconfig](https://github.com/zenorocha/my-coding-style/blob/master/.editorconfig) file that automatically set some indentation definitions. Make sure to install [Editor Config's](http://editorconfig.org/) plugin on your code editor and you'll be all set.
 
 ## Linting
