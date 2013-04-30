@@ -23,7 +23,7 @@ Every commit message needs to be in English, doesn't matter what's your native l
 
 ## Indentation
 
-The unit of indentation is **four spaces**. Never mix spaces and tabs.
+The unit of indentation is **4 spaces**. Never mix spaces and tabs.
 
 ```javascript
 // Good
