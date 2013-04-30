@@ -45,6 +45,20 @@ Use [JSHint](http://www.jshint.com/) to detect errors and potential problems.
 
 The options for JSHint are stored in a [.jshintrc](https://github.com/zenorocha/my-coding-style/blob/master/.jshintrc) file.
 
+## Semicolons
+
+Relying on ASI (Automatic Semicolon Insertion) can cause hard to debug problems, so don't do it. **Always** use semicolons.
+
+```javascript
+// Good
+a = b + c;
+test();
+
+// Bad
+a = b + c
+test()
+```
+
 ## Variables
 
 All variables should be declared **before** used. Avoid multiple var statements.
