@@ -159,13 +159,25 @@ for (i=0;i<10;i++) {
 }
 ```
 
-Both function expressions and function declarations have a space after the function keyword and the function name.
+Both function expressions and function declarations **doesn't** have a space between the function keyword and the function name.
 
 ```javascript
+// Good
+var foo = function() {
+    statements
+};
+
+// Bad
 var foo = function () {
     statements
 };
 
+// Good
+function bar() {
+    statements
+}
+
+// Bad
 function bar () {
     statements
 }
