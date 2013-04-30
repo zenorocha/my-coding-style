@@ -21,6 +21,8 @@ Adding feature X
 
 Every commit message needs to be in English, doesn't matter what's your native language.
 
+> Reason: TODO
+
 ## Indentation
 
 The unit of indentation is **4 spaces**. Never mix spaces and tabs.
@@ -37,6 +39,8 @@ while (condition) {
 }
 ```
 
+> Reason: TODO
+
 ## Line length
 
 Avoid lines longer than **80 characters**. When a statement will not fit on a single line, it may be necessary to break it. Place the break after an operator, ideally after a comma. The next line should be indented **4 spaces**.
@@ -52,11 +56,15 @@ YUI().use('aui-module-a', 'aui-module-b', 'aui-module-c', 'aui-module-d', 'aui-m
 
 Every project should contain a [.editorconfig](https://github.com/zenorocha/my-coding-style/blob/master/.editorconfig) file that automatically set some indentation definitions. Make sure to install [Editor Config's](http://editorconfig.org/) plugin on your code editor and you'll be all set.
 
+> Reason: TODO
+
 ## Linting
 
 Use [JSHint](http://www.jshint.com/) to detect errors and potential problems.
 
 The options for JSHint are stored in a [.jshintrc](https://github.com/zenorocha/my-coding-style/blob/master/.jshintrc) file.
+
+> Reason: TODO
 
 ## Semicolons
 
@@ -71,6 +79,8 @@ test();
 a = b + c
 test()
 ```
+
+> Reason: TODO
 
 ## Variables
 
@@ -96,6 +106,8 @@ var FOO = 'foo';
 var foo = 'foo';
 ```
 
+> Reason: TODO
+
 ## Strings
 
 Prefer single quotes over double quotes.
@@ -117,6 +129,8 @@ var color = '#D96AB6';
 // Bad
 var color = '#d96ab6';
 ```
+
+> Reason: TODO
 
 ## New lines
 
@@ -155,6 +169,8 @@ if (condition) {
     statements
 }
 ```
+
+> Reason: TODO
 
 ## Whitespace
 
@@ -212,6 +228,8 @@ if( x > 10 ){
 
 Empty lines have no trailing spaces.
 
+> Reason: TODO
+
 ## Conditionals
 
 Avoid inline conditionals. Every conditional (with single or multiple statements) should use **curly brackets** `{}`. The only exception to this rule is `else if`.
@@ -233,6 +251,8 @@ if (condition) statement;
 else if (condition) statement;
 else statement;
 ```
+
+> Reason: TODO
 
 ## Equality
 
@@ -260,6 +280,8 @@ if (bar != 'bar') {
 }
 ```
 
+> Reason: TODO
+
 ## Loops
 
 Avoid inline loops. Every loop (with single or multiple statements) should use **curly brackets** `{}`.
@@ -273,6 +295,8 @@ for (initialization; condition; expression) {
 // Bad
 for (initialization; condition; expression) statement;
 ```
+
+> Reason: TODO
 
 ## References
 
