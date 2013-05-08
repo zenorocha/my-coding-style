@@ -304,3 +304,4 @@ for (initialization; condition; expression) statement;
 * [Douglas Crockford's Code Conventions for JavaScript](http://javascript.crockford.com/code.html)
 * [idiomatic.js](https://github.com/rwldrn/idiomatic.js/)
 * [jQuery JavaScript Style Guide](http://contribute.jquery.org/style-guide/js/)
+* [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript)
