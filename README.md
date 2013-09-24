@@ -43,7 +43,7 @@ while (condition) {
 
 ## Line length
 
-Avoid lines longer than **80 characters**. When a statement will not fit on a single line, it may be necessary to break it. Place the break after an operator, ideally after a comma. The next line should be indented **4 spaces**.
+Avoid lines longer than **100 characters**. When a statement will not fit on a single line, it may be necessary to break it. Place the break after an operator, ideally after a comma. The next line should be indented **4 spaces**.
 
 ```javascript
 // Good
