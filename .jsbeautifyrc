@@ -1,4 +1,18 @@
 {
+    "css": {
+        "indentChar": " ",
+        "indentSize": 4
+    },
+    "html": {
+        "braceStyle": "end-expand",
+        "indentChar": " ",
+        "indentScripts": "keep",
+        "indentSize": 4,
+        "maxPreserveNewlines": 2,
+        "preserveNewlines": true,
+        "unformatted": ["a", "sub", "sup", "b", "i", "u"],
+        "wrapLineLength": 100
+    },
     "js": {
         "braceStyle": "end-expand",
         "breakChainedMethods": false,
