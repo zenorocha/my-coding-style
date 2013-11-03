@@ -25,6 +25,10 @@ Adding feature X
 
 > Reason: This preference comes from [Git itself](http://git.kernel.org/cgit/git/git.git/tree/Documentation/SubmittingPatches?id=HEAD#n111).
 
+When releasing a new version, write a commit message in the following format "Release - v1.0.0" instead of "v1.0.0".
+
+> Reason: Makes it easier to track version releases in git history. For example, you could run `git log --pretty=format:"%H %s" | grep 'Release'` to fetch only version bump commits.
+
 ## Indentation
 
 The unit of indentation is **4 spaces**. Never mix spaces and tabs.
