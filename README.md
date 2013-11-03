@@ -19,9 +19,11 @@ Added feature X
 Adding feature X
 ```
 
-Every commit message needs to be in English, doesn't matter what's your native language.
-
 > Reason: TODO
+
+Every commit message, pull request title or issue discussion **must be** in English.
+
+> Reason: English is the universal language nowadays, if you use any other language you're excluding potencial contributors.
 
 ## Indentation
 
