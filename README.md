@@ -8,6 +8,10 @@ But after reading [Nicholas Zakas's book](http://shop.oreilly.com/product/063692
 
 ## Commits
 
+Every commit message, pull request title or issue discussion must be in **English**.
+
+> Reason: English is the universal language nowadays, if you use any other language you're excluding potencial contributors.
+
 Don't use Past or Present Continuous tenses for commit messages, those should be in Imperative Present tense.
 
 ```javascript
@@ -19,11 +23,7 @@ Added feature X
 Adding feature X
 ```
 
-> Reason: TODO
-
-Every commit message, pull request title or issue discussion **must be** in English.
-
-> Reason: English is the universal language nowadays, if you use any other language you're excluding potencial contributors.
+> Reason: This preference comes from [Git itself](http://git.kernel.org/cgit/git/git.git/tree/Documentation/SubmittingPatches?id=HEAD#n111).
 
 ## Indentation
 
