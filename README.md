@@ -311,3 +311,7 @@ for (initialization; condition; expression) statement;
 * [idiomatic.js](https://github.com/rwldrn/idiomatic.js/)
 * [jQuery JavaScript Style Guide](http://contribute.jquery.org/style-guide/js/)
 * [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript)
+
+## License
+
+[MIT License](http://zenorocha.mit-license.org/) © Zeno Rocha
